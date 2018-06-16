@@ -1,5 +1,7 @@
 kind: StorageClass
 apiVersion: storage.k8s.io/v1
 metadata:
-  name: example-nfs
-provisioner: example.com/nfs
+  name: bs
+provisioner: bs/nfs
+parameters:
+  mountOptions: "vers=4.1"
